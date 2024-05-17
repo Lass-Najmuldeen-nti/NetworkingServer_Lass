@@ -15,7 +15,7 @@ if len(sys.argv) != 3:
 
 # Ta emot IP-adress och portnummer från kommandoraden
 IP_address = str(sys.argv[1])
-Port = int(sys.argv[2])
+Port = 12345
 
 # Binda servern till IP-adressen och portnumret
 server.bind((IP_address, Port))
