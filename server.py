@@ -1,4 +1,3 @@
-# Python program to implement server side of chat room.
 import socket
 import select
 import sys
@@ -15,7 +14,7 @@ if len(sys.argv) != 3:
 
 # Ta emot IP-adress och portnummer från kommandoraden
 IP_address = str(sys.argv[1])
-Port = 12345
+Port = int(sys.argv[2])
 
 # Binda servern till IP-adressen och portnumret
 server.bind((IP_address, Port))
